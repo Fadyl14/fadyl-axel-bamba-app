@@ -1,6 +1,6 @@
-# Remplace TON_USER_GITHUB par ton vrai identifiant GitHub
+# Remplace Fadyl14 par ton vrai identifiant GitHub
 image:
-  repository: ghcr.io/TON_USER_GITHUB/fadyl-axel-bamba-app
+  repository: ghcr.io/Fadyl14/fadyl-axel-bamba-app
   tag: latest
   pullPolicy: Always
 
