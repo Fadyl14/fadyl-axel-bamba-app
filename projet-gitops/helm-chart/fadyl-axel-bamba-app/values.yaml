@@ -1,0 +1,26 @@
+# Remplace TON_USER_GITHUB par ton vrai identifiant GitHub
+image:
+  repository: ghcr.io/TON_USER_GITHUB/fadyl-axel-bamba-app
+  tag: latest
+  pullPolicy: Always
+
+replicaCount: 1
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 5000
+
+resources:
+  requests:
+    cpu: 50m
+    memory: 64Mi
+  limits:
+    cpu: 200m
+    memory: 128Mi
+
+namespace: ns-fadyl-axel-bamba
+
+etudiant:
+  nom: "Fadyl Axel BAMBA"
+  slug: "fadyl-axel-bamba"

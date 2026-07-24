@@ -1,0 +1,6 @@
+apiVersion: v2
+name: fadyl-axel-bamba-app
+description: Application GitOps personnalisée - Fadyl Axel BAMBA - M1 SSI
+type: application
+version: 0.1.0
+appVersion: "1.0.0"
