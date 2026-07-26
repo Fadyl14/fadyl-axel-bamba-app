@@ -1,6 +1,6 @@
 # Remplace fadyl14 par ton vrai identifiant GitHub
 image:
-  repository: ghcr.io/fadyl14/fadyl-axel-bamba-app
+  repository: registry.gitlab.com/fadyl-axel-bamba-group/fadyl-axel-bamba-app
   tag: latest
   pullPolicy: Always
 
