@@ -5,8 +5,8 @@ on:
     branches: [ main ]
 
 env:
-  REGISTRY: ghcr.io
-  IMAGE_NAME: fadyl14/fadyl-axel-bamba-app
+  REGISTRY: registry.gitlab.com
+  IMAGE_NAME: fadyl-axel-bamba-group/fadyl-axel-bamba-app
 
 jobs:
   test:
@@ -48,8 +48,8 @@ jobs:
         uses: docker/login-action@v3
         with:
           registry: ${{ env.REGISTRY }}
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          username: ${{ secrets.GITLAB_USERNAME }}
+          password: ${{ secrets.GITLAB_TOKEN }}
       - name: Build de l'image
         run: |
           docker build -t ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }} \

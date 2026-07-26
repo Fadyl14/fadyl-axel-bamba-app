@@ -21,6 +21,8 @@ spec:
         prometheus.io/port: "5000"
         prometheus.io/path: "/metrics"
     spec:
+      imagePullSecrets:
+        - name: gitlab-registry-secret
       containers:
         - name: {{ .Release.Name }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
