@@ -38,9 +38,12 @@ spec:
               port: {{ .Values.service.targetPort }}
             initialDelaySeconds: 3
             periodSeconds: 5
+            timeoutSeconds: 5
           livenessProbe:
             httpGet:
               path: /healthz
               port: {{ .Values.service.targetPort }}
             initialDelaySeconds: 5
             periodSeconds: 10
+            timeoutSeconds: 5
+
